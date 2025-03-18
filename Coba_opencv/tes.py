@@ -1,16 +1,6 @@
 import cv2
 
 def tampilkan_dan_akses_piksel(path_gambar, skala=0.5):
-    """
-    Menampilkan gambar dan mengakses 10 nilai piksel pertama dalam bentuk RGB.
-    Gambar diubah ukurannya sebelum ditampilkan.
-
-    Args:
-        path_gambar (str): Path ke file gambar.
-        skala (float): Faktor skala untuk mengubah ukuran gambar.
-                       Nilai antara 0 dan 1 untuk memperkecil, lebih besar dari 1 untuk memperbesar.
-    """
-
     # Membaca gambar menggunakan OpenCV
     gambar = cv2.imread(path_gambar)
 
@@ -44,7 +34,5 @@ def tampilkan_dan_akses_piksel(path_gambar, skala=0.5):
         # Menampilkan nilai RGB
         print(f"Piksel {i+1}: ({r}, {g}, {b})")  # Mengubah ke urutan RGB
 
-
-# Contoh penggunaan
 path_gambar = r"D:\KULIAH\SEMESTER VI\Coba_opencv\cs.jpg"  # Ganti dengan path gambar Anda
 tampilkan_dan_akses_piksel(path_gambar, skala=0.5)  # Mengubah ukuran menjadi 30% dari ukuran asli
